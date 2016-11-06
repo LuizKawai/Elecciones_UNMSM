@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_where_vote"
+            android:icon="@drawable/ic_action_bike"
+            android:title="¿Dónde votar?" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_action_map"
+            android:title="Mapa" />
+        <item
+            android:id="@+id/nav_how_vote"
+            android:icon="@drawable/ic_action_bulb"
+            android:title="¿Cómo votar?" />
+    </group>
+
+
+</menu>

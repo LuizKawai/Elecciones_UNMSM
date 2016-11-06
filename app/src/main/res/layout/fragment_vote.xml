@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="0dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_gravity="top"
+                android:id="@+id/floro"
+                android:textColor="@color/primary_text"
+                android:text="Puede consultar su mesa de votación y saber si es miembro de mesa o no presionando cualquiera de las opciones mostradas a continuación e ingresando su código respectivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_1"
+                style="@style/ButtonDefault"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/button_primary"
+                android:text="Soy Estudiante Pregrado" />
+            <Button
+                android:id="@+id/btn_2"
+                style="@style/ButtonDefault"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/button_primary"
+                android:text="Soy Estudiante Posgrado" />
+
+            <Button
+                android:id="@+id/btn_3"
+                style="@style/ButtonDefault"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/button_primary"
+                android:text="Soy Profesor" />
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/ButtonDefault"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/button_primary"
+                android:text="¿Soy miembro de mesa?" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

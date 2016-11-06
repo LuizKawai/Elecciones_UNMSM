@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.artkodec.eleccionesunmsm2016.presentation.utils.ScrollChildSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/candidateContainer"
+        android:background="@color/windowBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/candidateLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                tools:listitem="@layout/item_company"
+                android:id="@+id/candi_list"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noNews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/noNewsMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="19dp"
+                android:text="No hay candidatos disponibles"
+                android:layout_marginBottom="16dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Compara sus propuestas"
+                android:layout_width="match_parent"
+                android:id="@+id/btn_cmp"
+                android:background="@drawable/button_primary"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.artkodec.eleccionesunmsm2016.presentation.utils.ScrollChildSwipeRefreshLayout>
